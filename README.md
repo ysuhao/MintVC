@@ -5,9 +5,10 @@ Windows 本机实时 RVC 变声客户端 · MINT RYU
 ## 下载
 
 请到 [最新版本下载页](https://github.com/ysuhao/MintVC/releases/latest) 下载软件包。
+选择 `MintVCver1.0-Windows-x64-Slim.exe` 自解压运行包，不需要另外安装解压软件。
 不要下载 GitHub 自动生成的 Source code.zip，它不是软件运行包。
 
-完整解压后运行 `MintVCver1.0.exe`，点击“进入”，载入你自己有权使用的 `.pth` 音色并选择输入/输出设备。
+双击下载的自解压包，选择目录并解压；再运行文件夹内的 `MintVCver1.0.exe`，点击“进入”，载入你自己有权使用的 `.pth` 音色并选择输入/输出设备。
 运行包包含本机 Python/RVC/FCPE/RNNoise 依赖，不需要安装 Python 或连接 VPS；不包含私人音色、账号数据、虚拟声卡驱动。
 
 - Windows 10/11 x64；此版本的 GPU 加速面向 NVIDIA CUDA 11.8 兼容显卡，其他硬件未经实机验证。
