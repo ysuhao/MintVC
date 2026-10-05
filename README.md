@@ -2,6 +2,18 @@
 
 Windows 本机实时 RVC 变声客户端 · MINT RYU
 
+## 和官方版有什么区别？
+
+简单说：这是使用 [官方 RVC 0718 内核](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/releases/tag/2.3.260718) 的简化客户端，不是官方产品。
+
+- 双击即可用，不需要安装 Python、登录或连接云端。
+- 界面更简单：载入音色、选输入输出、调音调音量、开始变声。
+- 额外提供降噪、空间效果和可关闭的游戏优化。
+- 继续使用已有 RVC `.pth` 音色；不含音色，不提供训练功能。
+- 优化版增加声音处理优化，已有音色不用重新训练。
+
+本版开启额外音质优化，实际效果取决于音色、麦克风和设置；不保证解决所有咬字问题。
+
 ## 下载
 
 请到 [最新版本下载页](https://github.com/ysuhao/MintVC/releases/latest) 下载软件包。
