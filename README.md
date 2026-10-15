@@ -12,19 +12,22 @@ Windows 实时 AI 变声，声音在本机处理。原项目名称为 MintVC / �
 
 ## 当前下载
 
-- **Mintaria 5.0 beta（测试版）**：[GitHub 分卷下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.0.0-beta) · [夸克完整包](https://pan.quark.cn/s/c21e24b7ef4a) · [Google Drive 完整包](https://drive.google.com/file/d/1YqJ0w-gwfmHGeFzkbkGA4r_wLhw5QMd7/view?usp=drivesdk)。Windows x64 / CUDA 12.8，完整包约 2.36 GiB。
-- **2.1（最新正式发行版）**：[版本说明与下载](https://github.com/ysuhao/Mintaria/releases/tag/v2.1.0)。较旧版本，使用 CUDA 11.8；功能和界面以该版本说明为准。
+- **Mintaria 5.1 正式版**：[GitHub 分卷下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.0) · [夸克完整包](https://pan.quark.cn/s/6787c6ca4b10) · [Google Drive 分卷下载](https://drive.google.com/drive/folders/15Aru5Fhy0rrTgSyTeuFYyBDuzLWMD8td)。Windows x64 / CUDA12.8，完整包约 2.44 GiB。
+- **5.0 beta（历史测试版）**：[历史版本与下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.0.0-beta)。
 
-GitHub 的 5.0 beta 安装包分为五个分卷。下载全部 `.exe.001` 至 `.exe.005` 和 `Merge-Mintaria.cmd`，放入同一文件夹后运行合并脚本；校验成功后会生成完整 EXE。也可直接下载网盘完整包。
+GitHub 的5.1安装包分为五个分卷，Google Drive 分为27个分卷。选择一个平台，下载该平台的全部分卷与 `Merge-Mintaria.cmd`，放在同一新文件夹后运行合并脚本；两个平台的分卷请勿混用。夸克可直接下载完整EXE。
 
-将完整包解压到新的空文件夹，运行 `MintVC/MintVC.exe`。无需安装 Python。程序文件与设置标识继续使用 MintVC，以兼容现有设置。请下载发行页的安装包；`Source code.zip` 不含可运行客户端。
+完整解压到新的空文件夹，运行 `MintVC/MintVC.exe`。无需安装Python，请保留旧目录；`Source code.zip`不是可运行客户端。
 
-5.0 beta 默认附带免费音色「风妈」，其他音色单独下载。普通 `.pth` 兼容；受保护的 `.mintpth` 音色需要账号登录与授权。官网展示的最新音色与方案不代表旧安装包已同步更新。
+5.1正式版只在手动开始变声时选择缓冲档位，运行中保持固定；设备自动重连沿用原设置。保留后台普通程序优先级优化和积压跳过。更新登录、注册界面和Mintaria M图标，音色质量设置保持原样。
+
+默认附带免费音色风妈，其他音色单独下载。普通`.pth`仍兼容，受保护的`.mintpth`需要账号登录及授权。持续算力不足时仍可能断音或跳过音频。
 
 ## 版本列表
 
 | 版本 | 类型 | 发布说明 |
 | --- | --- | --- |
+| [v5.1.0](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.0) | 正式版 | Mintaria 5.1 正式版 |
 | [v5.0.0-beta](https://github.com/ysuhao/Mintaria/releases/tag/v5.0.0-beta) | 测试版 | Mintaria 5.0 beta |
 | [v2.1.0](https://github.com/ysuhao/Mintaria/releases/tag/v2.1.0) | 正式版 | 萌妹AI变声（MintVC） · 2.1 |
 | [v2.0.0](https://github.com/ysuhao/Mintaria/releases/tag/v2.0.0) | 正式版 | 萌妹AI变声（MintVC） · 2.0 |
