@@ -12,21 +12,23 @@ Windows 实时 AI 变声，声音在本机处理。原项目名称为 MintVC / �
 
 ## 当前下载
 
-- **Mintaria 5.1 正式版**：[GitHub 分卷下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.0) · [夸克完整包](https://pan.quark.cn/s/6787c6ca4b10) · [Google Drive 分卷下载](https://drive.google.com/drive/folders/15Aru5Fhy0rrTgSyTeuFYyBDuzLWMD8td)。Windows x64 / CUDA12.8，完整包约 2.44 GiB。
+- **Mintaria 5.1.1 正式版**：[GitHub 分卷下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.1) · [夸克完整包](https://pan.quark.cn/s/a40d958dba18) · [Google Drive 下载](https://drive.google.com/open?id=1flIWqPIXaEHQbYO4U7bGVTjYSfTUg66f)。Windows x64 / CUDA12.8，完整包约 2.61 GiB。
+- **5.1 正式版（历史版本）**：[v5.1.0](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.0)。
 - **5.0 beta（历史测试版）**：[历史版本与下载](https://github.com/ysuhao/Mintaria/releases/tag/v5.0.0-beta)。
 
-GitHub 的5.1安装包分为五个分卷，Google Drive 分为27个分卷。选择一个平台，下载该平台的全部分卷与 `Merge-Mintaria.cmd`，放在同一新文件夹后运行合并脚本；两个平台的分卷请勿混用。夸克可直接下载完整EXE。
+GitHub 的 5.1.1 安装包分为 6 个分卷，下载全部分卷与 `Merge-Mintaria.cmd`，放在同一新文件夹后运行合并脚本。夸克与 Google Drive 可下载完整 EXE。
 
-完整解压到新的空文件夹，运行 `MintVC/MintVC.exe`。无需安装Python，请保留旧目录；`Source code.zip`不是可运行客户端。
+完整解压到新的空文件夹，运行 `MintVC/MintVC.exe`。无需安装 Python，请保留旧目录；`Source code.zip` 不是可运行客户端。
 
-5.1正式版只在手动开始变声时选择缓冲档位，运行中保持固定；设备自动重连沿用原设置。保留后台普通程序优先级优化和积压跳过。更新登录、注册界面和Mintaria M图标，音色质量设置保持原样。
+5.1.1 减少显卡同步等待，为音频收发与推理线程增加 MMCSS 调度保护，并在会话期间退出本进程电源节流。自适应缓冲在1000ms年龄硬上限内吸收迟到，仅在安静片段回收延迟；关闭自适应时保留固定时限。已完成数值一致性、资源恢复和延迟尖峰仿真，尚未完成新版真实对局听感验收。
 
-默认附带免费音色风妈，其他音色单独下载。普通`.pth`仍兼容，受保护的`.mintpth`需要账号登录及授权。持续算力不足时仍可能断音或跳过音频。
+默认附带免费音色风妈，其他音色单独下载。普通 `.pth` 仍兼容，受保护的 `.mintpth` 需要账号登录及授权。持续算力不足或极端系统抢占时仍可能断音或跳过音频。
 
 ## 版本列表
 
 | 版本 | 类型 | 发布说明 |
 | --- | --- | --- |
+| [v5.1.1](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.1) | 正式版 | Mintaria 5.1.1 正式版 |
 | [v5.1.0](https://github.com/ysuhao/Mintaria/releases/tag/v5.1.0) | 正式版 | Mintaria 5.1 正式版 |
 | [v5.0.0-beta](https://github.com/ysuhao/Mintaria/releases/tag/v5.0.0-beta) | 测试版 | Mintaria 5.0 beta |
 | [v2.1.0](https://github.com/ysuhao/Mintaria/releases/tag/v2.1.0) | 正式版 | 萌妹AI变声（MintVC） · 2.1 |
